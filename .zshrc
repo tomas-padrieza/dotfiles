@@ -1,6 +1,9 @@
 # Starship command shell improvements
 eval "$(starship init zsh)"
 
+# Extend PATH
+export PATH=~/.local/bin:$PATH
+
 # fzf config
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
