@@ -7,11 +7,12 @@ PATH=~/.local/bin:$PATH
 # Aliases
 alias vim=nvim
 alias ll="ls -hal"
+alias pn="pnpm"
 
 # fnm
-FNM_PATH="~/.local/share/fnm"
+export FNM_PATH="$HOME/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
-  PATH="~/.local/share/fnm:$PATH"
+  PATH="$FNM_PATH:$PATH"
   eval "`fnm env`"
 fi
 
